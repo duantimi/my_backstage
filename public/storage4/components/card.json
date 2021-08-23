@@ -1,0 +1,92 @@
+{
+  "modified": "Mon Apr 26 2021 21:51:10 GMT+0800 (中国标准时间)",
+  "width": 280,
+  "height": 350,
+  "func": "__ht__function(g, rect, comp, data, view) {\nconst list = comp.getValue('list');\nconst width = comp.getValue('width');\nconst height = comp.getValue('height');\nconst nameColor = comp.getValue('nameColor');\nconst valueColor = comp.getValue('valueColor');\nconst companyColor = comp.getValue('companyColor');\n\n//设置默认样式\nconst defaultBac = '#fff'\nconst defaultNum = 40\ng.shadowBlur=20;\ng.shadowColor=\"#999\";\ng.fillStyle = defaultBac\ng.fillRect(0, 0, width, height)\n\n//距离计算\n\n\nlet num = 0\nif (list.length > 0) {\n    for (let i = 0; i < list.length; i++) {\n        const item = list[i].data\n\n        for (let j = 0; j < item.length; j++) {\n            const val = item[j]\n            num += 1\n            // g.shadowOffsetX=0;\n            g.shadowColor=\"#fff\";\n            g.font = \"16px Arial\";\n            g.fillStyle = nameColor\n            g.fillText(val.name, 120, (j == 0 ? num * 50 : num * 50 - 20))\n            g.fillStyle = valueColor\n            g.fillText(val.value, 180, (j == 0 ? num * 50 : num * 50 - 20))\n            g.fillStyle = companyColor\n            g.fillText(val.company, 240, (j == 0 ? num * 50 : num * 50 - 20))\n        }\n    }\n}\n}",
+  "properties": {
+    "list": {
+      "valueType": "ObjectArray",
+      "defaultValue": [
+        {
+          "id": 1,
+          "data": [
+            {
+              "name": "站厅",
+              "value": 24.1,
+              "company": "℃"
+            },
+            {
+              "name": "站台",
+              "value": 27.4,
+              "company": "℃"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "data": [
+            {
+              "name": "站厅",
+              "value": 54.1,
+              "company": "%"
+            },
+            {
+              "name": "站台",
+              "value": 54.9,
+              "company": "%"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "data": [
+            {
+              "name": "进站",
+              "value": 641,
+              "company": "人"
+            },
+            {
+              "name": "出站",
+              "value": 666,
+              "company": "人"
+            },
+            {
+              "name": "换乘",
+              "value": 59,
+              "company": "人"
+            }
+          ]
+        }
+      ]
+    },
+    "width": {
+      "valueType": "Number",
+      "defaultValue": 280
+    },
+    "height": {
+      "valueType": "Number",
+      "defaultValue": 350
+    },
+    "nameColor": {
+      "valueType": "Color",
+      "defaultValue": "rgb(94,72,72)"
+    },
+    "valueColor": {
+      "valueType": "Color",
+      "defaultValue": "rgb(24,193,219)"
+    },
+    "companyColor": {
+      "valueType": "Color",
+      "defaultValue": "rgb(94,94,54)"
+    },
+    "humidity": {
+      "valueType": "Image"
+    },
+    "tem": {
+      "valueType": "Image"
+    },
+    "time": {
+      "valueType": "Image"
+    }
+  }
+}

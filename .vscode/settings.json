@@ -1,0 +1,24 @@
+{
+    "eslint.codeAction.disableRuleComment": {
+        "location": "separateLine",
+        "enable": true
+    },
+    "eslint.probe": [
+        "javascript",
+        "javascriptreact",
+        "html",
+        "json"
+    ],
+    "eslint.validate": [
+        "html",
+        "javascript",
+        "javascriptreact"
+    ],
+    "eslint.format.enable": true,
+    "eslint.lintTask.enable": true,
+    "eslint.codeActionsOnSave.mode": "all",
+    "eslint.run": "onSave",
+    "eslint.trace.server": "off",
+    "editor.tabSize": 4,
+    "javascript.implicitProjectConfig.experimentalDecorators": true
+}

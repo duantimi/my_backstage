@@ -1,0 +1,62 @@
+{
+  "v": "7.2.2-dev18",
+  "p": {
+    "autoAdjustIndex": true,
+    "hierarchicalRendering": true
+  },
+  "a": {
+    "sceneOrthographic": false,
+    "rulerEnabled": true
+  },
+  "d": [
+    {
+      "c": "ht.Node",
+      "i": 2416,
+      "p": {
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/jigui.json"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2631,
+      "p": {
+        "displayName": "jiguimen",
+        "position": {
+          "x": -198.03507,
+          "y": 8.50842
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/jiguimen.json",
+        "shape3d.color": "#32D3EB",
+        "shape3d.blend": "#32D3EB"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 3291,
+      "p": {
+        "position": {
+          "x": 185.17933,
+          "y": 25.32841
+        },
+        "anchorElevation": 0,
+        "elevation": 2.84115
+      },
+      "s": {
+        "shape3d": "models/server.json"
+      }
+    }
+  ],
+  "scene": {
+    "eye": [
+      -7.68108,
+      300,
+      999.9705
+    ]
+  }
+}

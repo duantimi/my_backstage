@@ -1,0 +1,42 @@
+{
+  "v": "7.2.2-dev18",
+  "p": {
+    "autoAdjustIndex": true,
+    "hierarchicalRendering": true
+  },
+  "a": {
+    "sceneOrthographic": false,
+    "rulerEnabled": true
+  },
+  "d": [
+    {
+      "c": "ht.Node",
+      "i": 183,
+      "p": {
+        "image": "symbols/card.json",
+        "position": {
+          "x": -34.89021,
+          "y": 907.98305
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/card.json",
+        "autorotate": true,
+        "alwaysOnTop": false,
+        "fixSizeOnScreen": [
+          -1,
+          -1
+        ]
+      }
+    }
+  ],
+  "scene": {
+    "eye": [
+      0,
+      443.23663,
+      1477.45544
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+    "presets": [
+        [
+            "@babel/env",
+            {
+                "corejs": "3",
+                "useBuiltIns": "entry",
+                "targets": {
+                    "chrome": "58",
+                    "ie": "10"
+                }
+            }
+        ],
+        "@babel/preset-react"
+    ],
+    "plugins": [
+        [
+            "@babel/plugin-proposal-decorators", // 支持es7装饰器
+            {
+                "legacy": true
+            }
+        ],
+        "@babel/plugin-syntax-dynamic-import",
+        "@babel/plugin-proposal-object-rest-spread",
+        "@babel/plugin-proposal-class-properties", //使用class新属性
+        "@babel/plugin-transform-runtime",
+        [
+            "import",
+            {
+                "libraryName": "antd",
+                "libraryDirectory": "es",
+                "style": true
+            },
+            "antd"
+        ],
+        [
+            "import",
+            {
+                "libraryName": "@antd-design/icons",
+                "libraryDirectory": "dist/icons",
+                "camel2DashComponentName": false
+            },
+            "@antd-design/icons"
+        ],
+    ]
+}

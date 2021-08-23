@@ -1,0 +1,6 @@
+{
+  "modelType": "obj",
+  "obj": "assets/server/server.obj",
+  "mtl": "assets/server/server.mtl",
+  "prefix": "assets/server/"
+}

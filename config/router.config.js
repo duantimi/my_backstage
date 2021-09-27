@@ -126,13 +126,7 @@ export default [
             title: '第十三天',
             icon: 'file-text',
             component: import('@/routes/day_13'),
-          },
-          {
-            path: '/n',
-            title: '第十四天',
-            icon: 'file-text',
-            component: import('@/routes/day_14'),
-          },
+          }
         ],
       },
     ],
